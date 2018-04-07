@@ -1,0 +1,16 @@
+#
+# Disk Space
+#
+Target[space]: `df / | grep / | awk '{print $3"\n"$4"\nUNKNOWN\nUNKNOWN"}'`
+Title[space]: Disk Usage
+PageTop[space]: <h1>Disk Usage</h1>
+MaxBytes[space]: 8199104000
+Options[space]: nopercent, growright, gauge, pngdate
+kMG[space]: K,M,G
+kilo[space]: 1024
+ShortLegend[space]: bytes
+YLegend[space]: Bytes
+LegendI[space]: Space Used
+LegendO[space]: Space Available
+Legend1[space]: Space Used
+Legend2[space]: Space Available

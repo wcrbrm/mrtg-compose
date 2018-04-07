@@ -1,0 +1,13 @@
+
+Target[xvda_io]: diskIONRead.25&diskIONWritten.25:public@localhost::15:10::2
+MaxBytes[xvda_io]: 9999999999
+Options[xvda_io]: nopercent, growright, withzeroes, noinfo, pngdate
+kilo[xvda_io]: 1024
+Title[xvda_io]: DISK IO /dev/xvda
+PageTop[xvda_io]: <h1>DISK IO /dev/xvda FROM SNMP</h1>
+ShortLegend[xvda_io]: b/s
+YLegend[xvda_io]: Bytes/s
+LegendI[xvda_io]: READ IO
+LegendO[xvda_io]: WRITE IO
+Legend1[xvda_io]: READ IO
+Legend2[xvda_io]: WRITE IO

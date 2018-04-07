@@ -1,0 +1,19 @@
+Target[eth0]: \eth0:public@localhost::15:10::2
+SetEnv[eth0]: MRTG_INT_IP="94.177.161.223" MRTG_INT_DESCR="eth0"
+MaxBytes[eth0]: 125000000
+Options[eth0]: nopercent, growright, bits, pngdate
+Title[eth0]: Traffic Usage eth0
+PageTop[eth0]: <H1>Traffic Usage eth0</H1>
+
+Target[eth_1]: ifInOctets.1&ifOutOctets.1:public@localhost
+MaxBytes[eth_1]: 125000000
+Title[eth_1]: Traffic Link 1
+PageTop[eth_1]: <H1>Traffic Link 1</H1>
+Options[eth_1]: nopercent, growright, bits, pngdate
+
+Target[eth_2]: ifInOctets.2&ifOutOctets.2:public@localhost
+MaxBytes[eth_2]: 125000000
+Title[eth_2]: Traffic Link 2
+PageTop[eth_2]: <H1>Traffic Link 2</H1>
+Options[eth_2]: nopercent, growright, bits, pngdate
+

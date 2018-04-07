@@ -1,0 +1,15 @@
+#
+# MYSQL CPU / MEMORY
+#
+Target[mysql_cpumem]: `ps ax -o %cpu,%mem,comm|grep mysqld|awk 'BEGIN{cpu=0;mem=0}{cpu+=$1;mem+=$2}END{print cpu"\n"mem"\nUNKNOWN\nUNKNOWN"}'`
+Options[mysql_cpumem]: nopercent, growright, gauge, noinfo, unknaszero, pngdate
+MaxBytes[mysql_cpumem]: 100
+Title[mysql_cpumem]: MYSQL cpu / memory usage
+PageTop[mysql_cpumem]: <h1>MYSQL cpu / memory usage</h1>
+ShortLegend[mysql_cpumem]: %
+YLegend[mysql_cpumem]: Percents
+Unscaled[mysql_cpumem]: ymwd
+LegendI[mysql_cpumem]: CPU
+LegendO[mysql_cpumem]: Memory
+Legend1[mysql_cpumem]: CPU
+Legend2[mysql_cpumem]: Memory

@@ -1,0 +1,14 @@
+#
+# Serving TCP connections
+#
+Target[tcp-est]: `cat /var/log/netstat.log | grep -c "SYN_SENT"; netstat -st 2>/dev/null | grep "connections established" | awk '{print $1}'; echo -ne "UNKNOWN\nUNKNOWN\n"`
+Title[tcp-est]: Number of connections in ESTABLISHED/SYN_SENT state
+PageTop[tcp-est]: <H1>Number of connections in ESTABLISHED/SYN_SENT state</H1>
+Options[tcp-est]: gauge, nopercent, growright, perminute, pngdate
+MaxBytes[tcp-est]: 10000
+YLegend[tcp-est]: Connections
+ShortLegend[tcp-est]: con
+LegendI[tcp-est]: TCP Connections in SYN_SENT State
+LegendO[tcp-est]: TCP Connections in ESTABLISHED State
+Legend1[tcp-est]: TCP Connections in SYN_SENT State
+Legend2[tcp-est]: TCP Connections in ESTABLISHED State

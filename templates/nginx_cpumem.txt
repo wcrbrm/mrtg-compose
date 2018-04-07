@@ -1,0 +1,15 @@
+#
+# NGINX CPU / MEMORY
+#
+Target[nginx_cpumem]: `ps ax -o %cpu,%mem,comm|grep nginx|awk 'BEGIN{cpu=0;mem=0}{cpu+=$1;mem+=$2}END{print cpu"\n"mem"\nUNKNOWN\nUNKNOWN"}'`
+Options[nginx_cpumem]: nopercent, growright, gauge, noinfo, unknaszero, pngdate
+MaxBytes[nginx_cpumem]: 100
+Title[nginx_cpumem]: NGINX cpu / memory usage
+PageTop[nginx_cpumem]: <h1>NGINX cpu / memory usage</h1>
+ShortLegend[nginx_cpumem]: %
+YLegend[nginx_cpumem]: Percents
+Unscaled[nginx_cpumem]: ymwd
+LegendI[nginx_cpumem]: CPU
+LegendO[nginx_cpumem]: Memory
+Legend1[nginx_cpumem]: CPU
+Legend2[nginx_cpumem]: Memory

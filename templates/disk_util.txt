@@ -1,0 +1,11 @@
+Pagetop[xvda_util]: <H1> Disk Utilization /dev/xvda (%)</H1>
+Options[xvda_util]: growright, gauge, nobanner, nopercent, pngdate
+Title[xvda_util]: xvda Util %
+MaxBytes[xvda_util]: 100
+AbsMax[xvda_util]: 100
+Target[xvda_util]: `cat /var/log/iostat.log | grep xvda | awk '{avgqu+=$9; await+=$10; util+=$12;}END{print await*avgqu/240000 "\n" util/50"\nUNKNOWN\nUNKNOWN"}'`
+WithPeak[xvda_util]: w m y
+ShortLegend[xvda_util]: %
+YLegend[xvda_util]: Disk Utilization /dev/xvda (%)
+LegendI[xvda_util]: xvda IOWait
+LegendO[xvda_util]: xvda Utilization

@@ -1,0 +1,14 @@
+#
+# Swap usage
+#
+Target[swap]: `cat /proc/swaps | grep / | awk '{print $3"\n"$4"\nUNKNOWN\nUNKNOWN"}'`
+PageTop[swap]: <H1>Swap Memory</H1>
+Options[swap]: nopercent,growright,gauge,noinfo
+Title[swap]: Free Memory
+MaxBytes[swap]: 10000000000000
+kMG[swap]: k,M,G,T,P,X
+YLegend[swap]: bytes
+ShortLegend[swap]: bytes
+LegendI[swap]:  Free Memory:
+LegendO[swap]:
+Legend1[swap]: Swap memory avail, in bytes

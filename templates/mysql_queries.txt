@@ -1,0 +1,14 @@
+#
+# MYSQL QUERIES
+#
+Target[mysql_queries]: `/usr/bin/mysqladmin -u root  ver|awk '/Qu/{q=$4;s=$7}/Up/{u=$0}/Se/{v=$3}END{print q"\n"s"\n"u"\nMYSQL version "v}'|sed 's/Uptime:[[:space:]]\+//'`
+Options[mysql_queries]: nopercent, growright, integer, perminute, pngdate
+MaxBytes[mysql_queries]: 250000
+Title[mysql_queries]: MYSQL queries count
+PageTop[mysql_queries]: <h1>MYSQL queries count</h1>
+ShortLegend[mysql_queries]: q/m
+YLegend[mysql_queries]: Count
+LegendI[mysql_queries]: queries
+LegendO[mysql_queries]: slow queries
+Legend1[mysql_queries]: queries
+Legend2[mysql_queries]: slow queries

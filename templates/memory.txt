@@ -1,0 +1,17 @@
+#
+# MEMORY
+#
+Target[memory]: memCached.0&memTotalReal.0:public@localhost::15:10::2 -
+                memIndex.0&memAvailReal.0:public@localhost::15:10::2
+Title[memory]: Memory usage
+PageTop[memory]: <h1>Memory Usage</h1>
+MaxBytes[memory]: 8199104000
+Options[memory]: nopercent, growright, gauge, pngdate
+kMG[memory]: K,M
+kilo[memory]: 1024
+ShortLegend[memory]: bytes
+YLegend[memory]: Bytes
+LegendI[memory]: Cached RAM
+LegendO[memory]: Used RAM
+Legend1[memory]: Cached RAM
+Legend2[memory]: Used RAM

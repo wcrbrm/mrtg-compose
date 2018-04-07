@@ -1,0 +1,14 @@
+#
+# LOAD AVERAGE
+#
+Target[la]: laLoadInt.2&laLoadInt.1:public@localhost::15:10::2
+Options[la]: nopercent, growright, gauge, integer, noinfo, pngdate
+MaxBytes[la]: 100000
+Title[la]: Load Average integer values (x100)
+PageTop[la]: <h1>Load Average integer values (x100)</h1>
+ShortLegend[la]: points
+YLegend[la]: Integer
+LegendI[la]: LA 5 min
+LegendO[la]: LA 1 min
+Legend1[la]: LA 5 min
+Legend2[la]: LA 1 min

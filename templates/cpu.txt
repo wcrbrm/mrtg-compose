@@ -1,0 +1,17 @@
+#
+# CPU LOAD
+#
+Target[cpu]: (ssCpuRawWait.0&ssCpuRawUser.0:public@localhost::15:10::2 +
+              memIndex.0&ssCpuRawNice.0:public@localhost::15:10::2 +
+              memIndex.0&ssCpuRawSystem.0:public@localhost::15:10::2)/2
+Options[cpu]: nopercent, growright, integer, pngdate
+MaxBytes[cpu]: 100
+Title[cpu]: CPU Load
+PageTop[cpu]: <h1>CPU Load</h1>
+Unscaled[cpu]: ymwd
+YLegend[cpu]: Percents
+ShortLegend[cpu]: %
+LegendI[cpu]: CPU IOwait
+LegendO[cpu]: CPU Load
+Legend1[cpu]: CPU IOwait
+Legend2[cpu]: CPU Load

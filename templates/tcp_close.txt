@@ -1,0 +1,4 @@
+Target[tcp-close]: `cat /var/log/netstat.log | grep -c "CLOSE_WAIT"; cat /var/log/netstat.log | grep -c "TIME_WAIT"; echo -ne "UNKNOWN\nUNKNOWN\n" 2>/dev/null`
+Title[tcp-close]: Number of connections in TIME_WAIT/CLOSE_WAIT state
+PageTop[tcp-close]: <H1>Number of connections in TIME_WAIT/CLOSE_WAIT state</H1>
+Options[tcp-close]: gauge, nopercent, growright, perminute, pngdate

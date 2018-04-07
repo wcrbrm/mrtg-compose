@@ -1,0 +1,11 @@
+Pagetop[xvda_rwps]: <H1> IO Requests /dev/xvda (rpm) </H1>
+Options[xvda_rwps]: growright, gauge, nobanner, nopercent, pngdate
+Title[xvda_rwps]: /dev/xvda IO Requests
+MaxBytes[xvda_rwps]: 10000
+AbsMax[xvda_rwps]: 10000
+Target[xvda_rwps]: `cat /var/log/iostat.log | grep xvda | awk '{rreq+=$4; wreq+=$5;}END{print rreq/50 "\n" wreq/50"\nUNKNOWN\nUNKNOWN"}'`
+WithPeak[xvda_rwps]: w m y
+ShortLegend[xvda_rwps]: rpm
+YLegend[xvda_rwps]: /dev/xvda IO Requests
+LegendI[xvda_rwps]: xvda Read requests per minute
+LegendO[xvda_rwps]: xvda Write requests per minute
